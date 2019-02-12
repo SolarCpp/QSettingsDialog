@@ -11,7 +11,7 @@ class QSettingsPropertyLoaderPrivate;
 //! A loader to load properties from objects and gadgets @ingroup grp_loaders
 class QSETTINGSDIALOGSHARED_EXPORT QSettingsPropertyLoader : public QAsyncSettingsLoader
 {
-	Q_OBJECT
+	//Q_OBJECT
 
 public:
 	//! Creates a loader for a property on an object
@@ -30,7 +30,7 @@ public:
 	//! Returns whether the constructed loader points to a valid property on a valid object/gadget
 	bool isValid() const;
 
-public slots:	
+//public slots:	
 	// QAsyncSettingsLoader interface
 	void loadData() override;
 	void saveData(const QVariant &data) override;
